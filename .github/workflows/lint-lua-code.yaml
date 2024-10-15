@@ -1,0 +1,31 @@
+name: Check Lua Formatting
+on:
+  push:
+    branches:
+      - master
+      - main
+      - feature/*
+      - hotfix/*
+      - release/*
+  pull_request:
+    branches:
+      - master
+      - main
+      - feature/*
+      - hotfix/*
+      - release/*
+
+jobs:
+  Stylua_Check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Stylua Check
+        uses: JohnnyMorganz/stylua-action@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          version: latest
+          args: --check .
+

@@ -1,17 +1,18 @@
-name: Check Lua Formating
+name: Check Lua Formatting
 on:
-  pull_requests:
+  pull_request:
     branches:
-      - 'master'
-      - 'main'
-      - 'feature/*'
-      - 'hotfix/*'
-      - 'release/*'
+      - master
+      - main
+      - feature/*
+      - hotfix/*
+      - release/*
 
 jobs:
-  - name: Stylua Check
+  Stylua Check:
     uses: JohnnyMorganz/stylua-action@v3
     with:
       token: ${{ secrets.GITHUB_TOKEN }}
       version: latest
-      args: --check . 
+      args: --check .
+

@@ -10,7 +10,7 @@ on:
 
 jobs:
   - name: Stylua Check
-    uses: uses: JohnnyMorganz/stylua-action@v3
+    uses: JohnnyMorganz/stylua-action@v3
     with:
       token: ${{ secrets.GITHUB_TOKEN }}
       version: latest

@@ -1,8 +1,8 @@
-return {
-    "tiagovla/tokyodark.nvim",
-    lazy = false,
-    priority = 1000,
+{
+    "vague2k/huez.nvim",
+    branch = "stable",
+    event = "UIEnter",
     config = function()
-        vim.cmd("colorscheme tokyodark")
+        require("huez").setup({})
     end,
 }

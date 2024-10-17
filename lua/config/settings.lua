@@ -28,5 +28,5 @@ o.splitbelow = true         -- When on, splitting a window will put the new wind
 o.termguicolors = true
 o.tabstop = 2               -- Setting tabstops and shiftwidth this will help with indentaion in yaml files
 o.shiftwidth = 2
-o.spelling = 'en_us'        -- Set spell checking language to english
+o.spelllang = 'en_us'       -- Set spell checking language to english
 o.spell = true              -- Enable spell checking

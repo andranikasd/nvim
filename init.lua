@@ -5,3 +5,5 @@ require("andranikasd.options")
 vim.schedule(function()
   require('lsp.config')
 end)
+
+
